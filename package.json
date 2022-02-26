@@ -21,10 +21,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@storybook/addon-actions": "^6.4.19",
-    "@storybook/addon-essentials": "^6.4.19",
-    "@storybook/addon-links": "^6.4.19",
-    "@storybook/vue3": "^6.4.19",
+    "@storybook/addon-actions": "^6.5.0-alpha.42",
+    "@storybook/addon-essentials": "^6.5.0-alpha.42",
+    "@storybook/addon-links": "^6.5.0-alpha.42",
+    "@storybook/builder-webpack5": "^6.5.0-alpha.42",
+    "@storybook/manager-webpack5": "^6.5.0-alpha.42",
+    "@storybook/vue3": "^6.5.0-alpha.42",
     "@types/jest": "^27.0.1",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-typescript": "~5.0.0",
@@ -47,6 +49,8 @@
   ],
   "jest": {
     "preset": "@vue/cli-plugin-unit-jest/presets/typescript-and-babel",
-    "snapshotSerializers": ["jest-serializer-vue"]
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ]
   }
 }
