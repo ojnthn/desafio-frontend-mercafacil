@@ -1,8 +1,8 @@
 <template>
-    <div style="padding: 10px; float: right;">
-			<img v-if="!orderAsc" src="../assets/icons/desc.png" @click="changeOrder()">
-			<img v-if="orderAsc" src="../assets/icons/asc.png" @click="changeOrder()">
-		</div>
+	<div style="padding: 10px; float: right;">
+		<img v-if="!orderAsc" src="../assets/icons/desc.png" @click="changeOrder()">
+		<img v-if="orderAsc" src="../assets/icons/asc.png" @click="changeOrder()">
+	</div>
 </template>
 
 <script>

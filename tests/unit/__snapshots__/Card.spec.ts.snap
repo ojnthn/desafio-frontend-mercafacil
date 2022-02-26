@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card.vue renders the correct message 1`] = `
+<div class="card"><img src="" alt="Rick" srcset="">
+  <div class="description">
+    <p class="character-name">Rick</p>
+    <p class="character-status"><span><div class="status alive"></div> Alive </span> - <span>Human</span></p>
+    <p><small>Origin: Earth</small></p>
+  </div>
+</div>
+`;

@@ -17,6 +17,7 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
 	name: "Navigation",
+	emits: ["navigation"],
 	methods: {
 		navigate: function(direction) {
 			this.$emit("navigation", direction)

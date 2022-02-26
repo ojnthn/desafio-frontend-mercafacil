@@ -1,15 +1,17 @@
 <template>
   <Header />
   <div class="content">
+    <h2>Personagens</h2>
     <div style="text-align: center">
       <input v-model="term" 
         v-on:keyup="this.findCharacter()"
         placeholder="Pesquise por um personagem" 
         class="input--pesquisa"      
       >
+      <Order />
     </div>
     <List :page="this.page" :term="this.term" :key="componentKey"/>
-    <div style="text-align: center">
+    <div style="text-align: center;">
       <Navigation @navigation="setNavigation" />
     </div>
   </div>
@@ -69,6 +71,7 @@ export default defineComponent({
 }
 
 .content {
+  min-height: 400px;
   margin: 50px;
   padding: 20px;
   background-color: #f6f6ff;
