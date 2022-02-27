@@ -1,6 +1,6 @@
 <template>
   <div v-if="error">Algo deu errado</div>
-	<div v-if="loading" style="text-align: center;">
+	<div v-else-if="loading" style="align-self: center; margin: auto">
 		<Loader />
 	</div>
 	<div v-else>

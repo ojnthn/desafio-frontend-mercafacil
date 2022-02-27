@@ -1,16 +1,16 @@
 <template>
   <Header />
   <div class="content">
-    <h2>Personagens</h2>
+    <h2>Characters</h2>
     <div style="text-align: center;">
       <input v-model="term" 
         v-on:keyup="this.findCharacter()"
-        placeholder="Pesquise por um personagem" 
+        placeholder="Search for a character" 
         class="input--pesquisa"      
       >
     </div>
     <List :page="this.page" :term="this.term" :key="componentKey"/>
-    <div style="text-align: center;">
+    <div class="container--navigation">
       <Navigation @navigation="setNavigation" />
     </div>
   </div>
@@ -62,13 +62,6 @@ export default defineComponent({
 <style>
 @import url("./assets/base.css");
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
 .content {
   min-height: 400px;
   margin: 50px;
@@ -76,6 +69,8 @@ export default defineComponent({
   background-color: #f6f6ff;
   border-radius: 10px;
   box-shadow: 0px 0px 15px 0px #666666;
+  display: flex;
+  flex-direction: column;
 }
 
 .input--pesquisa {
@@ -91,5 +86,10 @@ export default defineComponent({
   border-color: black;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(225, 239, 104, 0.6);
   outline: 0 none;
+}
+
+.container--navigation {
+  align-self: flex-end;
+  margin: 0 auto;
 }
 </style>

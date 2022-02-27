@@ -1,12 +1,12 @@
 <template>
   <img src="../assets/icons/arrow.png" 
-			 title="Anterior" 
+			 title="Previous page" 
 			 style="transform: rotate(180deg);" 
 			 width="30" 
 			 @click="navigate('prev')" 
 	/>
 	<img src="../assets/icons/arrow.png" 
-			 title="Próximo" 
+			 title="Next page" 
 			 width="30" 
 			 @click="navigate('next')" 
 	/> 
