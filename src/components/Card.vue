@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" @click="showInfo()">
     <img :src="character.image" :alt="character.name" srcset="">
     <div class="description">
       <p class="character-name">{{ character.name }}</p>
@@ -33,6 +33,23 @@ export default defineComponent({
 	name: 'Card',
   props: {
     character: Object
+  },
+  methods: {
+    showInfo: function() {
+      let episodes = [];
+
+      this.character.episode.map(item => {
+        episodes.push(`<li><strong>${item.episode}</strong> - ${item.name}</li>`)
+      });
+
+      //@ts-ignore
+      this.$swal(
+        this.character.name,
+        `
+          <strong>Episodes</strong>: <ul style="text-align: left;">${episodes.join("")}</ul>
+        `
+      );
+    }
   }
 });
 </script>

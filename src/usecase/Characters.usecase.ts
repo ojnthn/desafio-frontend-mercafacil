@@ -11,12 +11,12 @@ export class CharactersUseCase {
 				species
 				image
 				episode {
-				id
-				episode
-				name
+					id
+					episode
+					name
 				}
 				location {
-				name
+					name
 				}
 			}
 		`

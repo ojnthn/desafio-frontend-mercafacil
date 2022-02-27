@@ -2,13 +2,12 @@
   <Header />
   <div class="content">
     <h2>Personagens</h2>
-    <div style="text-align: center">
+    <div style="text-align: center;">
       <input v-model="term" 
         v-on:keyup="this.findCharacter()"
         placeholder="Pesquise por um personagem" 
         class="input--pesquisa"      
       >
-      <Order />
     </div>
     <List :page="this.page" :term="this.term" :key="componentKey"/>
     <div style="text-align: center;">
