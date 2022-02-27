@@ -14,8 +14,6 @@
     * [Componentes utilizados](#componentes-utilizados)
 * [Testes](#testes)
 
-<br />
-
 # Instalação
 
 ### Pré-requisitos
