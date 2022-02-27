@@ -5,7 +5,7 @@ export default {
   component: MyHeader,
 };
 
-const Template = () => ({
+const Template = (args) => ({
   components: { MyHeader },
   template: '<my-header />',
 });

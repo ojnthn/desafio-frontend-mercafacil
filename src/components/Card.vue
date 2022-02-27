@@ -55,6 +55,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
+@import url("../assets/base.css");
+
 p {
   margin: 0;
 }
